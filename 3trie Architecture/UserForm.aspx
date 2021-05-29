@@ -1,13 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserForm.aspx.cs" Inherits="_3trie_Architecture.UserForm" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminLTE.Master" AutoEventWireup="true" CodeBehind="UserForm.aspx.cs" Inherits="_3trie_Architecture.UserForm" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
+<asp:Content ID="title" ContentPlaceHolderID="TitleContentPlaceHolder" runat="server">User</asp:Content>
+<asp:Content ID="h1Tag" ContentPlaceHolderID="h1ContentPlaceHolder" runat="server">User Form</asp:Content>
+<asp:Content ID="BreadCrump" ContentPlaceHolderID="BreadCrumbContentPlaceHolder" runat="server">User</asp:Content>
+<asp:Content ID="mainForm" ContentPlaceHolderID="MainContentContentPlaceHolder" runat="server">
     <form id="form1" runat="server">
         <table class="table  text-center">
             <tr>
@@ -55,8 +51,4 @@
             </asp:GridView>
         </div>
     </form>
-
-    <script src="Scripts/jquery-3.4.1.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-</body>
-</html>
+</asp:Content>
